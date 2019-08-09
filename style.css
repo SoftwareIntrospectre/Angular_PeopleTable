@@ -1,0 +1,23 @@
+table{
+    font-family: arial;
+    text-align: left;
+}
+
+table td {
+    padding: 8px;
+    border-top: 1px solid #006699;
+    border-bottom: 1px solid #E45E9D;
+    border-left: 1px solid #000000;
+
+    background: 1px solid #FFFFFF;
+}
+
+table th{
+    padding: 11px 15px 12px 15p;
+    border-top: 1px solid #FAFAFA;
+    border-bottom: 1px solid #E0E0E0;
+
+    background: #EDEDED;
+    background: -webkit-gradient(linear, left top, left bottom, from(#006699), to(#E45E9D));
+    background: -moz-linear-gradient(top, #EDEDED, #EBEBEB);
+}

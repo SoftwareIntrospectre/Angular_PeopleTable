@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>First Names and Last Names Table - Angular App</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular."></script>
+        <script src="controller.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div ng-controller="SampleCtrl">
+            <table>
+                <thread>
+                    <th>Last</th>
+                    <th>First</th>
+                </thread>
+                <tbody>
+                    <tr ng-repeat="person in people">
+                        <td>{{ person.last }}</td>
+                        <td>{{ person.first }}</td>
+                    </tr>
+                    <tr>
+                        <td><input ng-model="addLast" type="text" placeholder="Last" /></td>
+                        <td><input ng-model="addFirst" type="text" placeholder="First" /></td>
+                        <td><button ng-click="addPerson()">Add</button></td>
+                    </tr>
+            </tbody>
+        </div>
+    </body>
+</html>
